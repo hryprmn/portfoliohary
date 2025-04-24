@@ -1,0 +1,392 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #BCA37F;
+}
+
+#navbar-brand {
+    font-family: 'Oleo Script';
+    color: #113946;
+    font-size: 25px;
+}
+
+.navbar-nav {
+    font-family: 'Montserrat';
+    color: #113946;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a.active {
+    color: #EAD7BB;
+    border-bottom: 3px solid #EAD7BB;
+}
+
+@media (max-width: 768px) {
+    #navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar-nav {
+        font-size: 13px;
+    }
+}
+
+/* INTRO SECTION */
+#intro-section {
+    height: auto;
+    font-family: 'Manrope';
+    color: #113946;
+    padding-top: 3rem;
+}
+
+#introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+#name-info {
+    padding-top: 15px;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Wrapper untuk foto dan rectangle */
+.position-relative {
+    position: relative;
+}
+
+/* Rectangle di belakang gambar */
+.rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-51%, -51%);
+    width: 250px;
+    height: 280px;
+    background-color: #EAD7BB;
+    border-radius: 10px;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+
+.profile-pic {
+    position: relative;
+    z-index: 3;
+    width: 250px;
+    height: auto;
+}
+
+#summary {
+    max-width: 55%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.download-btn {
+    background-color: #EAD7BB;
+    color: #113946;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+#download-text {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 500;
+    color: #113946;
+    margin-left: 5px;
+}
+
+.download-btn:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.230);
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    #name-info {
+        font-size: 24px;
+    }
+
+    #summary {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .rectangle {
+        width: 200px;
+        height: 220px;
+    }
+
+    .profile-pic {
+        width: 200px;
+        margin-right: 0;
+    }
+
+    .download-btn {
+        width: 160px;
+        padding: 8px 15px;
+    }
+}
+
+
+/* SECTION */
+
+.section-header {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.title-section {
+    font-size: 30px;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    color: #113946;
+}
+
+.info-section {
+    color: #113946;
+    font-family: 'Manrope';
+    font-size: 15px;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-top: 5px;
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .title-section {
+        font-size: 25px;
+    }
+
+    .info-section {
+        font-size: 14px;
+    }
+}
+
+
+
+/* ABOUT ME SECTION */
+#aboutme-section {
+    padding-top: 3rem;
+    font-family: 'Manrope';
+}
+
+#aboutme-section .row img {
+    border-radius: 10px;
+}
+
+.formal-pics {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 18px 50px -10px;
+}
+
+.aboutme-desc {
+    color: #113946;
+    padding: 20px;
+    font-family: 'Manrope';
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+ul.aboutme-desc {
+    list-style-position: inside;
+    /* Agar bullet point sejajar dengan teks */
+}
+
+/* PROJECT SECTION */
+#project-section {
+    height: auto;
+    padding-top: 3rem;
+}
+
+#project-section .container {
+    max-width: 900px;
+    /* Sesuaikan lebar sesuai kebutuhan */
+    margin: 0 auto;
+    /* Untuk membuatnya berada di tengah */
+    align-items: center;
+    text-align: center;
+}
+
+.project-name {
+    font-weight: 500;
+}
+
+.project-info {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+#project-section .row {
+    background-color: #EAD7BB;
+    padding: 30px;
+    border-radius: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+#project-section .row img {
+    border-radius: 15px;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 3px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 6px; */
+}
+
+#imageModal img {
+    width: 1000px;
+    height: 500px;
+    max-width: calc(100vw - 20px);
+    max-height: calc(100vh - 20px);
+    border-radius: 10px;
+    /* Opsional */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    /* Opsional */
+}
+
+td {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project-hr {
+    border: none;
+    height: 0.1rem;
+    background-color: black;
+    opacity: 1;
+}
+
+.project-btn {
+    background-color: hsl(40, 97%, 87%);
+    color: #113946;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 500;
+    color: #113946;
+}
+
+.project-btn i {
+    transform: rotate(-45deg);
+}
+
+.project-btn:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.230);
+}
+
+.zoomable {
+    cursor: pointer;
+}
+
+/* SKILL SECTION */
+#skill-section {
+    padding-top: 3rem;
+    margin-bottom: 0;
+}
+
+#skill-section .container {
+    height: auto;
+    padding: 20px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 120px;
+    border-radius: 8px;
+    padding-top: 15px;
+    background-color: #EAD7BB;
+    flex-direction: column;
+    box-shadow: rgba(67, 71, 85, 0.1) 3px 4px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+
+.icon-container img {
+    max-width: 50px;
+}
+
+.icon-label {
+    font-family: 'Manrope';
+    margin-top: 10px;
+    font-size: 13px;
+    color: #113946;
+    font-weight: 700;
+}
+
+/* certification */
+/* #certification {
+    padding-top: 5rem;
+}
+ */
+
+/* footer */
+
+/* .footer {
+    background-color: #BCA37F;
+    color: #113946;
+    font-family: 'Montserrat';
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#first-column {
+    padding-left: 20px;
+    text-align: start;
+}
+
+.footer-info {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#second-column {
+    padding-right: 20px;
+    text-align: end;
+} */
+
+/* .btn-rounded {
+    border-radius: 50%;
+    background-color: #EAD7BB;
+    color: #113946;
+    font-size: 20px;
+    margin: 4px 2px;
+    padding: 13px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-rounded:hover {
+    background-color: #cfb895;
+} */
