@@ -105,6 +105,10 @@ document.addEventListener('DOMContentLoaded', () => {
   );
 
   animatedSections.forEach(section => observer.observe(section));
+
+  const tahun = new Date().getFullYear();
+  const nama = "Hary Permana"; // Bisa kamu ganti sesuai kebutuhan
+  document.getElementById("footer").textContent = `© ${tahun} ${nama}.`;
 });
 
 function removeHash() {
